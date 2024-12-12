@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#admin-signup">Admin Signup</a></li>
+                <li><a href="#admin-login">Admin Login</a></li>
+                <li><a href="#user-signup">User Signup</a></li>
+                <li><a href="#user-login">User Login</a></li>
+                <li><a href="#vendor-signup">Vendor Signup</a></li>
+                <li><a href="#vendor-login">Vendor Login</a></li>
+                <li><a href="#event-management">Event Management</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Admin Signup -->
+        <section id="admin-signup">
+            <h2>Admin Signup</h2>
+            <form action="/admin/signup" method="POST">
+                <label for="admin-name">Name:</label>
+                <input type="text" id="admin-name" name="name" required>
+
+                <label for="admin-email">Email:</label>
+                <input type="email" id="admin-email" name="email" required>
+
+                <label for="admin-password">Password:</label>
+                <input type="password" id="admin-password" name="password" required>
+
+                <button type="submit">Signup</button>
+            </form>
+        </section>
+
+        <!-- Admin Login -->
+        <section id="admin-login">
+            <h2>Admin Login</h2>
+            <form action="/admin/login" method="POST">
+                <label for="admin-email-login">Email:</label>
+                <input type="email" id="admin-email-login" name="email" required>
+
+                <label for="admin-password-login">Password:</label>
+                <input type="password" id="admin-password-login" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- User Signup -->
+        <section id="user-signup">
+            <h2>User Signup</h2>
+            <form action="/user/signup" method="POST">
+                <label for="user-name">Name:</label>
+                <input type="text" id="user-name" name="name" required>
+
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-email" name="email" required>
+
+                <label for="user-password">Password:</label>
+                <input type="password" id="user-password" name="password" required>
+
+                <button type="submit">Signup</button>
+            </form>
+        </section>
+
+        <!-- User Login -->
+        <section id="user-login">
+            <h2>User Login</h2>
+            <form action="/user/login" method="POST">
+                <label for="user-email-login">Email:</label>
+                <input type="email" id="user-email-login" name="email" required>
+
+                <label for="user-password-login">Password:</label>
+                <input type="password" id="user-password-login" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Vendor Signup -->
+        <section id="vendor-signup">
+            <h2>Vendor Signup</h2>
+            <form action="/vendor/signup" method="POST">
+                <label for="vendor-name">Name:</label>
+                <input type="text" id="vendor-name" name="name" required>
+
+                <label for="vendor-email">Email:</label>
+                <input type="email" id="vendor-email" name="email" required>
+
+                <label for="vendor-password">Password:</label>
+                <input type="password" id="vendor-password" name="password" required>
+
+                <button type="submit">Signup</button>
+            </form>
+        </section>
+
+        <!-- Vendor Login -->
+        <section id="vendor-login">
+            <h2>Vendor Login</h2>
+            <form action="/vendor/login" method="POST">
+                <label for="vendor-email-login">Email:</label>
+                <input type="email" id="vendor-email-login" name="email" required>
+
+                <label for="vendor-password-login">Password:</label>
+                <input type="password" id="vendor-password-login" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Event Management -->
+        <section id="event-management">
+            <h2>Event Management</h2>
+            <p>Welcome to the Event Management System. Here, admins can manage events, users can book events, and vendors can list their services.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
